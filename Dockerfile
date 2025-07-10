@@ -13,9 +13,8 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY Linear Regression.pkl/ ./
-COPY .streamlit/ .streamlit/  
 COPY main.py .
 
-EXPOSE 8000
+EXPOSE 8001
 
-CMD ["streamlit", "run", "main.py", "--server.address=0.0.0.0", "--server.port=8000"]
+CMD ["streamlit", "run", "main.py", "--server.address=0.0.0.0", "--server.port=8001"]

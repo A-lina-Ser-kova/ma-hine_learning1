@@ -12,7 +12,7 @@ RUN apt-get update \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY Linear Regression.pkl/ ./
+COPY Linear_Regression.pkl/ ./
 COPY main.py .
 
 EXPOSE 8001
